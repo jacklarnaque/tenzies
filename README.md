@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Here is my tenzie Game!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### The game is inpired by the tutorial of "scimba", which was for me very helpfull , this react tutorial helped me to step in react by the practice and make me so much move confident! Thanks a lot to them :) 
