@@ -1,38 +1,181 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    text-align: center;
+    height: 100%;
+    margin: auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body {
+    background-color: black;
   }
-  to {
-    transform: rotate(360deg);
+  .lost {
+    letter-spacing: 2px;
+    color: white;
+    margin: 20px auto;
+    width: 100%;
+    font-size: 120px;
+    font-family: "Permanent Marker";
+    animation: bloody 4s ease infinite alternate;
+    -webkit-animation: bloody 4s ease infinite alternate;
+    -moz-animation: bloody 4s ease infinite alternate;
+    -o-animation: bloody 4s ease infinite alternate;
+    color: white;
+    padding-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin: auto;
   }
-}
+  @keyframes bloody {
+    0% {
+      text-shadow: 0px 1px 3px #c8102e;
+      letter-spacing: -0.025em;
+    }
+    100% {
+      text-shadow: 0px 5px 3px #c8102e, 0px 10px 3px #c8102e, 0px 15px 3px #c8102e,
+        0px 20px 3px #c8102e, 0px 25px 3px #c8102e, 0px 30px 3px #c8102e,
+        0px 35px 3px #c8102e, 0px 40px 3px #c8102e, 0px 45px 3px #c8102e,
+        0px 50px 3px #c8102e, 0px 55px 3px #c8102e, 0px 60px 3px #c8102e;
+    }
+  }
+  .note {
+    color: #c8102e;
+    font-size: 80px;
+    margin: 20px auto;
+    font-family: "nosifer";
+    animation: grow 5s ease infinite alternate;
+    -webkit-animation: grow 5s ease infinite alternate;
+    -moz-animation: grow 5s ease infinite alternate;
+    -o-animation: grow 5s ease infinite alternate;
+  }
+  @keyframes grow {
+    0% {
+      letter-spacing: -0.03em;
+      /* opacity: 0.7; */
+    }
+    100% {
+      letter-spacing: 0em;
+      /* opacity: 1; */
+    }
+  }
+  .container {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .blooddrop {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    margin: 0;
+    top: 50px;
+    background-color: #c8102e;
+    border-radius: 50%;
+    animation: drip 4s cubic-bezier(1, 0, 0.62, 0.2) infinite;
+    -webkit-animation: drip 4s cubic-bezier(1, 0, 0.62, 0.2) infinite;
+    -moz-animation: drip 4s cubic-bezier(1, 0, 0.62, 0.2) infinite;
+    -o-animation: drip 4s cubic-bezier(1, 0, 0.62, 0.2) infinite;
+  }
+  .blooddrop:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 23px solid #c8102e;
+    top: -20px;
+    left: 1px;
+  }
+  .blooddrop:nth-of-type(1) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: -170px;
+    animation-delay: 1s;
+  }
+  .blooddrop:nth-of-type(2) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: -120px;
+    animation-delay: 3s;
+  }
+  .blooddrop:nth-of-type(3) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: -100px;
+    animation-delay: 4s;
+  }
+  .blooddrop:nth-of-type(4) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: -50px;
+    animation-delay: 5.5s;
+  }
+  .blooddrop:nth-of-type(5) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 3px;
+    animation-delay: 4.5s;
+  }
+  .blooddrop:nth-of-type(6) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 30px;
+    animation-delay: 3.2s;
+  }
+  .blooddrop:nth-of-type(7) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 60px;
+    animation-delay: 4.8s;
+  }
+  .blooddrop:nth-of-type(8) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 70px;
+    animation-delay: 2s;
+  }
+  .blooddrop:nth-of-type(9) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 100px;
+    animation-delay: 1s;
+  }
+  .blooddrop:nth-of-type(10) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 115px;
+    animation-delay: 0.5s;
+  }
+  .blooddrop:nth-of-type(11) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 155px;
+    animation-delay: 1.5s;
+  }
+  .blooddrop:nth-of-type(12) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 190px;
+    animation-delay: 2.3s;
+  }
+  
+  @keyframes drip {
+    0% {
+      top: -75px;
+    }
+    100% {
+      top: 550px;
+    }
+  }
+  
